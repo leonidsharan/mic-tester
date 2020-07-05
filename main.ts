@@ -2,7 +2,7 @@ let reading = 0
 pins.setPull(DigitalPin.P0, PinPullMode.PullDown)
 let prevReading = 1023
 basic.forever(function () {
-    reading = pins.analogReadPin(AnalogPin.P0)
+    reading = pins.analogReadPin(AnalogPin.P2)
     led.plotBarGraph(
     reading,
     1023
